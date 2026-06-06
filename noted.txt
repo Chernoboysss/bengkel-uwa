@@ -1,0 +1,12 @@
+5. Kalau Sudah Selesai Ngoding di Rumah
+
+Simpan perubahan:
+
+git add .
+git commit -m "Update dokumentasi"
+git push
+
+6. Balik Lagi ke Laptop
+Sebelum lanjut ngoding:
+
+git pull
