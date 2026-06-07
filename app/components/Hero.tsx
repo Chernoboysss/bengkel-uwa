@@ -20,7 +20,7 @@ export default function Hero() {
                         <div className="mt-10 flex flex-col gap-4 md:flex-row">
                             <button className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white hover:bg-blue-700">
                                 <a
-                                    href="https://wa.me/6287887676435"
+                                    href="https://wa.me/6285693495820" 
                                     target="_blank"
                                     className="rounded-xl bg-blue-600 px-8 py-4 font-semibold text-white hover:bg-blue-700"
                                 >
@@ -41,7 +41,7 @@ export default function Hero() {
                         <div className="mt-14 grid grid-cols-3 gap-6">
                             <div>
                                 <h3 className="text-3xl font-bold text-blue-600">
-                                    500+
+                                    100+
                                 </h3>
                                 <p className="text-slate-600">
                                     Mobil Diperbaiki
@@ -70,7 +70,7 @@ export default function Hero() {
 
                     <div>
                         <Image
-                            src="/images/hero.jpg"
+                            src="/images/hero.png"
                             alt="Mobil Bengkel UWA"
                             width={1200}
                             height={800}

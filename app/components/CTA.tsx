@@ -15,7 +15,7 @@ export default function CTA() {
         </p>
 
         <a
-          href="https://wa.me/6281234567890"
+          href="https://wa.me/6285693495820"
           target="_blank"
           className="mt-10 inline-flex items-center gap-3 rounded-2xl bg-white px-8 py-4 text-lg font-bold text-blue-600 shadow-xl transition hover:scale-105"
         >

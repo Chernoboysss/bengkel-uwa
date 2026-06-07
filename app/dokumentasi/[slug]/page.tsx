@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { projects } from "../../data/projects";
 import Navbar from "../../components/Navbar";
-
+import { prisma } from "@/lib/prisma";
 export default async function DetailProject({
     params,
 }: {
@@ -9,9 +8,11 @@ export default async function DetailProject({
 }) {
     const { slug } = await params;
 
-    const project = projects.find(
-        (item) => item.slug === slug
-    );
+    const project = await prisma.project.findUnique({
+    where: {
+        slug,
+    },
+});
 
     if (!project) {
         return (
@@ -31,7 +32,21 @@ export default async function DetailProject({
             </main>
         );
     }
+let embedUrl = "";
 
+if (project.youtubeUrl) {
+  try {
+    const url = new URL(project.youtubeUrl);
+
+    const videoId = url.searchParams.get("v");
+
+    if (videoId) {
+      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    }
+  } catch {
+    embedUrl = project.youtubeUrl;
+  }
+}
     return (
 
         <>
@@ -55,8 +70,8 @@ export default async function DetailProject({
                     <div className="rounded-3xl bg-white p-8 shadow-lg">
 
                         <Image
-                            src={project.gambar}
-                            alt={project.nama}
+                            src={project.thumbnail}
+                            alt="gambar"
                             width={1200}
                             height={800}
                             className="h-96 w-full rounded-2xl object-cover"
@@ -84,6 +99,23 @@ export default async function DetailProject({
                                 {project.deskripsi}
                             </p>
 
+                            {project.youtubeUrl && (
+  <div className="mt-10">
+    <h2 className="mb-4 text-3xl font-bold text-slate-900">
+      Video Pengerjaan
+    </h2>
+
+    <div className="overflow-hidden rounded-3xl">
+      <iframe
+        className="h-[500px] w-full"
+        src={embedUrl}
+        title="Video Pengerjaan"
+        allowFullScreen
+      />
+    </div>
+  </div>
+)}
+
                         </div>
 
                         <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -96,7 +128,7 @@ export default async function DetailProject({
                                 </div>
 
                                 <Image
-                                    src={project.before}
+                                    src={project.beforeImage}
                                     alt="Before"
                                     width={800}
                                     height={600}
@@ -112,8 +144,8 @@ export default async function DetailProject({
                                 </div>
 
                                 <Image
-                                    src={project.after}
-                                    alt="After"
+                                    src={project.afterImage}
+                                    alt="gambar"
                                     width={800}
                                     height={600}
                                     className="h-72 w-full rounded-2xl object-cover"

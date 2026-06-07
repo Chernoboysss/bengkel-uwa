@@ -1,21 +1,18 @@
 import Image from "next/image";
-import { projects } from "../data/projects";
 import Navbar from "../components/Navbar";
+import { prisma } from "@/lib/prisma";
 
-export default function DokumentasiPage() {
+export default async function DokumentasiPage() {
+    const projects = await prisma.project.findMany({
+  orderBy: {
+    createdAt: "desc",
+  },
+});
     return (
         <>
             <Navbar />
             <main className="min-h-screen bg-slate-50 pt-32">
 
-                <div className="mb-8 text-center">
-                    <a
-                        href="/"
-                        className="rounded-xl bg-blue-600 px-5 py-3 text-white"
-                    >
-                        ← Kembali ke Beranda
-                    </a>
-                </div>
 
                 <div className="container mx-auto px-6">
 
@@ -37,7 +34,7 @@ export default function DokumentasiPage() {
                                 className="overflow-hidden rounded-3xl bg-white shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
                             >
                                 <Image
-                                    src={project.gambar}
+                                    src={project.thumbnail}
                                     alt={project.nama}
                                     width={800}
                                     height={600}

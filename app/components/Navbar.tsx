@@ -70,7 +70,7 @@ export default function Navbar() {
                     </a>
 
                     <a
-                        href="https://wa.me/6281234567890"
+                        href="https://wa.me/6285693495820"
                         target="_blank"
                         className="rounded-xl bg-blue-600 px-5 py-2 text-white hover:bg-blue-700"
                     >
@@ -128,7 +128,7 @@ export default function Navbar() {
                         </a>
 
                         <a
-                            href="https://wa.me/6281234567890"
+                            href="https://wa.me/6285693495820"
                             target="_blank"
                             className="mt-4 rounded-xl bg-blue-600 px-5 py-3 text-center text-white"
                         >
