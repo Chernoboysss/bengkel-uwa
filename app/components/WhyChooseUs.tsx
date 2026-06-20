@@ -17,65 +17,81 @@ export default function WhyChooseUs() {
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-                    <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl" >
-                        <Wrench
-                            size={42}
-                            className="mb-4 text-blue-600"
-                        />
+                    <div className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl group">
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Teknisi Berpengalaman
-                        </h3>
+    <div className="mb-4 flex justify-center">
+        <Wrench
+            size={42}
+            className="text-blue-600 transition duration-300 group-hover:scale-110"
+        />
+    </div>
 
-                        <p className="text-slate-600">
-                            Dikerjakan oleh tenaga ahli yang berpengalaman.
-                        </p>
-                    </div>
+    <h3 className="mb-3 text-xl font-bold text-slate-900">
+        Teknisi Berpengalaman
+    </h3>
 
-                    <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl">
-                        <BadgeDollarSign
-                            size={42}
-                            className="mb-4 text-green-600"
-                        />
+    <p className="text-slate-600">
+        Dikerjakan oleh tenaga ahli yang berpengalaman.
+    </p>
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Harga Transparan
-                        </h3>
+</div>
 
-                        <p className="text-slate-600">
-                            Estimasi harga jelas tanpa biaya tersembunyi.
-                        </p>
-                    </div>
+<div className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl group">
 
-                    <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl">
-                        <Zap
-                            size={42}
-                            className="mb-4 text-yellow-500"
-                        />
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Pengerjaan Cepat
-                        </h3>
+    <div className="mb-4 flex justify-center">
+        <BadgeDollarSign
+            size={42}
+            className="text-green-600 transition duration-300 group-hover:scale-110"
+        />
+    </div>
 
-                        <p className="text-slate-600">
-                            Proses pengerjaan efisien dan tepat waktu.
-                        </p>
-                    </div>
+    <h3 className="mb-3 text-xl font-bold text-slate-900">
+        Harga Transparan
+    </h3>
 
-                    <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl">
-                        <ShieldCheck
-                            size={42}
-                            className="mb-4 text-emerald-600"
-                        />
+    <p className="text-slate-600">
+        Estimasi harga jelas tanpa biaya tersembunyi.
+    </p>
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Garansi Hasil
-                        </h3>
+</div>
 
-                        <p className="text-slate-600">
-                            Kepuasan pelanggan menjadi prioritas utama.
-                        </p>
-                    </div>
+<div className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl group">
 
+    <div className="mb-4 flex justify-center">
+        <Zap
+            size={42}
+            className="text-yellow-500 transition duration-300 group-hover:scale-110"
+        />
+    </div>
+
+    <h3 className="mb-3 text-xl font-bold text-slate-900">
+        Pengerjaan Cepat
+    </h3>
+
+    <p className="text-slate-600">
+        Proses pengerjaan efisien dan tepat waktu.
+    </p>
+
+</div>
+
+<div className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl group">
+
+    <div className="mb-4 flex justify-center">
+        <ShieldCheck
+            size={42}
+            className="text-emerald-600 transition duration-300 group-hover:scale-110"
+        />
+    </div>
+
+    <h3 className="mb-3 text-xl font-bold text-slate-900">
+        Garansi Hasil
+    </h3>
+
+    <p className="text-slate-600">
+        Kepuasan pelanggan menjadi prioritas utama.
+    </p>
+
+</div>
                 </div>
 
             </div>

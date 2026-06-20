@@ -226,10 +226,10 @@ export default function EditForm({
   type="file"
   accept="image/*"
   onChange={(e) =>
-    setThumbnailFile(
-      e.target.files?.[0] || null
-    )
-  }
+  setBeforeFile(
+    e.target.files?.[0] || null
+  )
+}
   className="
     w-full
     text-sm
@@ -262,10 +262,10 @@ export default function EditForm({
   type="file"
   accept="image/*"
   onChange={(e) =>
-    setThumbnailFile(
-      e.target.files?.[0] || null
-    )
-  }
+  setAfterFile(
+    e.target.files?.[0] || null
+  )
+}
   className="
     w-full
     text-sm

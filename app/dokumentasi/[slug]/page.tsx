@@ -74,7 +74,12 @@ if (project.youtubeUrl) {
                             alt="gambar"
                             width={1200}
                             height={800}
-                            className="h-96 w-full rounded-2xl object-cover"
+                            className="
+        aspect-[4/3]
+        w-full
+        rounded-2xl
+        object-cover
+    "
                         />
 
                         <div className="mt-8">
@@ -95,9 +100,9 @@ if (project.youtubeUrl) {
 
                             </div>
 
-                            <p className="mt-6 text-slate-600">
-                                {project.deskripsi}
-                            </p>
+                            <p className="mt-6 whitespace-pre-line text-slate-600">
+  {project.deskripsi}
+</p>
 
                             {project.youtubeUrl && (
   <div className="mt-10">
@@ -132,7 +137,12 @@ if (project.youtubeUrl) {
                                     alt="Before"
                                     width={800}
                                     height={600}
-                                    className="h-72 w-full rounded-2xl object-cover"
+                                    className="
+                                        aspect-[4/3]
+                                        w-full
+                                        rounded-2xl
+                                        object-cover
+                                        "
                                 />
                             </div>
 
@@ -148,7 +158,13 @@ if (project.youtubeUrl) {
                                     alt="gambar"
                                     width={800}
                                     height={600}
-                                    className="h-72 w-full rounded-2xl object-cover"
+                                    className="
+                                        aspect-[4/3]
+                                        w-full
+                                        rounded-2xl
+                                        object-cover
+                                        "
+                                
                                 />
                             </div>
 

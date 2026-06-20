@@ -18,10 +18,10 @@ export default function Gallery() {
                     {/* Card 1 */}
                     <div className="overflow-hidden rounded-3xl bg-white shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+                            src="/images/repairbody.png"
                             alt="Perbaikan Penyok Pintu"
                             className="h-64 w-full object-cover"
-                        />
+                            />
 
                         <div className="p-6">
                             <h3 className="font-bold text-slate-900">
@@ -37,10 +37,10 @@ export default function Gallery() {
                     {/* Card 2 */}
                     <div className="overflow-hidden rounded-3xl bg-white shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                            src="/images/catbody.jpg"
                             alt="Cat Ulang Body"
                             className="h-64 w-full object-cover"
-                        />
+                            />
 
                         <div className="p-6">
                             <h3 className="font-bold text-slate-900">
@@ -56,7 +56,7 @@ export default function Gallery() {
                     {/* Card 3 */}
                     <div className="overflow-hidden rounded-3xl bg-white shadow-lg">
                         <img
-                            src="https://images.unsplash.com/photo-1553440569-bcc63803a83d"
+                            src="/images/repairpenyok.jpg"
                             alt="Body Repair"
                             className="h-64 w-full object-cover"
                         />

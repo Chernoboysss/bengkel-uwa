@@ -20,67 +20,83 @@ export default function Services() {
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 ">
 
                     <div className="group rounded-3xl border border-slate-200 p-8 transition hover:border-blue-500 hover:shadow-xl">
-                        <Hammer
-                            size={48}
-                            className="mb-5 text-blue-600"
-                        />
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Ketok Magic
-                        </h3>
+  <div className="mb-5 flex justify-center">
+    <Hammer
+      size={48}
+      className="text-blue-600"
+    />
+  </div>
 
-                        <p className="text-slate-600">
-                            Perbaikan penyok ringan hingga berat dengan hasil presisi.
-                        </p>
-                    </div>
+  <h3 className="mb-3 text-center text-xl font-bold text-slate-900">
+    Ketok Magic
+  </h3>
 
-                    <div className="group rounded-3xl border border-slate-200 p-8 transition hover:border-blue-500 hover:shadow-xl">
-                        <Car
-                            size={48}
-                            className="mb-5 text-blue-600"
-                        />
+  <p className="text-center text-slate-600">
+    Perbaikan penyok ringan hingga berat dengan hasil presisi.
+  </p>
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Body Repair
-                        </h3>
+</div>
 
-                        <p className="text-slate-600">
-                            Perbaikan bodi kendaraan akibat benturan atau kecelakaan.
-                        </p>
-                    </div>
+                    <div className="group rounded-3xl border border-slate-200 p-8 text-center transition hover:border-blue-500 hover:shadow-xl">
 
-                    <div className="group rounded-3xl border border-slate-200 p-8 transition hover:border-blue-500 hover:shadow-xl">
-                        <PaintBucket
-                            size={48}
-                            className="mb-5 text-blue-600"
-                        />
+  <div className="mb-5 flex justify-center">
+    <Car
+      size={48}
+      className="text-blue-600"
+    />
+  </div>
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Cat Mobil
-                        </h3>
+  <h3 className="mb-3 text-xl font-bold text-slate-900">
+    Body Repair
+  </h3>
 
-                        <p className="text-slate-600">
-                            Pengecatan ulang dengan warna presisi dan finishing maksimal.
-                        </p>
-                    </div>
+  <p className="text-slate-600">
+    Perbaikan bodi kendaraan akibat benturan atau kecelakaan.
+  </p>
 
-                    <div className="group rounded-3xl border border-slate-200 p-8 transition hover:border-blue-500 hover:shadow-xl">
-                        <Sparkles
-                            size={48}
-                            className="mb-5 text-blue-600"
-                        />
+</div>
 
-                        <h3 className="mb-3 text-xl font-bold text-slate-900">
-                            Poles Body
-                        </h3>
+<div className="group rounded-3xl border border-slate-200 p-8 text-center transition hover:border-blue-500 hover:shadow-xl">
 
-                        <p className="text-slate-600">
-                            Mengembalikan kilau kendaraan agar terlihat seperti baru.
-                        </p>
-                    </div>
+  <div className="mb-5 flex justify-center">
+    <PaintBucket
+      size={48}
+      className="text-blue-600"
+    />
+  </div>
+
+  <h3 className="mb-3 text-xl font-bold text-slate-900">
+    Cat Mobil
+  </h3>
+
+  <p className="text-slate-600">
+    Pengecatan ulang dengan warna presisi dan finishing maksimal.
+  </p>
+
+</div>
+
+<div className="group rounded-3xl border border-slate-200 p-8 text-center transition hover:border-blue-500 hover:shadow-xl">
+
+  <div className="mb-5 flex justify-center">
+    <Sparkles
+      size={48}
+      className="text-blue-600"
+    />
+  </div>
+
+  <h3 className="mb-3 text-xl font-bold text-slate-900">
+    Poles Body
+  </h3>
+
+  <p className="text-slate-600">
+    Mengembalikan kilau kendaraan agar terlihat seperti baru.
+  </p>
+
+</div>
 
                 </div>
 
